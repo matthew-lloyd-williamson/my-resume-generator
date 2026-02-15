@@ -113,7 +113,7 @@ export const experiences: Experience[] = [
       "Lead technical direction for Next.js web application development.",
       "Work directly with product to translate Figma designs into actionable Jira tickets.",
       "Guide engineering team through sprint planning and execution.",
-      "Build features using React, TypeScript, and Next.js. with a focus on CWV/SEO",
+      "Build features using React, TypeScript, and Next.js. with a focus on CWV/SEO.",
       "Contribute to Node.js backend services and API development.",
       "Mentor team members and conduct code reviews to maintain code quality.",
       "Lead E2E Testing strategy and implementation using Playwright.",
@@ -160,7 +160,7 @@ export const experiences: Experience[] = [
     startDisplay: "04/2024",
     endDate: new Date("01/13/2025"),
     endDisplay: "01/2025",
-    title: "Sr. Software Engineer",
+    title: "Senior Software Engineer",
     company: Carvana,
     url: "https://carvana.com/",
     achievements: [
@@ -228,7 +228,7 @@ export const experiences: Experience[] = [
     startDisplay: "12/2022",
     endDate: new Date("04/1/2024"),
     endDisplay: "04/2024",
-    title: "Sr. Software Engineer",
+    title: "Senior Software Engineer",
     company: SavvyTrader,
     url: "https://savvytrader.com/",
     achievements: [
@@ -238,6 +238,7 @@ export const experiences: Experience[] = [
       "Architected AI-driven features using OpenAI/OpenAPI and created one of the first 50 ChatGPT Plugins.",
       "Managed AWS infrastructure (Lambda, API Gateway, DynamoDB, S3, etc.) to support scalable systems.",
       "Integrated 3rd-party FinTech APIs and internal APIs to enhance platform capabilities.",
+      "Built reusable, scalable, and testable code for high-performance systems.",
       "Implemented real-time data visualization using Highcharts/Victory Charts, including a differentiating chart events system.",
       "Played a key role in shaping product direction and engineering strategy at a fast-paced startup.",
     ],
@@ -299,7 +300,7 @@ export const experiences: Experience[] = [
     startDisplay: "03/2022",
     endDate: new Date("12/1/2022"),
     endDisplay: "12/2022",
-    title: "Sr. Software Engineer",
+    title: "Senior Software Engineer",
     company: ImagineLearning,
     url: "https://www.imaginelearning.com/",
     achievements: [

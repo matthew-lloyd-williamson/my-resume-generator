@@ -149,9 +149,12 @@ const Experiences = ({ experiences }: ExperiencesProps) =>
     </Stack>
   ));
 
-const experienceSubsets = chunkExperiences(
-  [...experiences].reverse().slice(0, experiences.length - 1),
-);
+// Get just the top most recent relevant experiences
+const orderedExperiences = [...experiences]
+  .reverse()
+  .slice(0, experiences.length - 1);
+
+const experienceSubsets = chunkExperiences<Experience>(orderedExperiences);
 
 const PageOne = () => (
   <Stack sx={{ p: 1 }} spacing={2}>
@@ -240,15 +243,9 @@ const PageOne = () => (
 
 const PageTwo = () => (
   <Stack spacing={2} sx={{ p: 1, mt: 1 }}>
-    {experienceSubsets.slice(1).map((e, index) => (
-      <Section
-        key={index}
-        header="My Experiences (Continued)"
-        icon={<WorkOutline />}
-      >
-        <Experiences experiences={e} />
-      </Section>
-    ))}
+    <Section header="My Experiences (Continued)" icon={<WorkOutline />}>
+      <Experiences experiences={experienceSubsets[1]} />
+    </Section>
     <Section header="Note to Reader" icon={<EditOutlined />}>
       <Stack spacing={1.75}>
         <Typography variant="caption" sx={{ color: "#000000" }}>

@@ -61,10 +61,10 @@ export const chunkExperiences = <T>(arr: T[]): T[][] => {
     return [arr];
   }
 
-  result.push([arr[0], arr[1]]);
+  result.push([arr[0], arr[1], arr[2]]);
 
-  for (let i = 2; i < arr.length; i += 4) {
-    result.push(arr.slice(i, i + 4));
+  for (let i = 3; i < arr.length; i += 4) {
+    result.push(arr.slice(i, arr.length - 1));
   }
 
   return result;
