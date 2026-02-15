@@ -116,7 +116,7 @@ interface ExperiencesProps {
 }
 const Experiences = ({ experiences }: ExperiencesProps) =>
   experiences.map((e, index) => (
-    <Stack key={e.id} spacing={1}>
+    <Stack key={`experience-${e.company.name}-${index}`} spacing={1}>
       <Stack
         direction="row"
         spacing={1}
@@ -150,7 +150,7 @@ const Experiences = ({ experiences }: ExperiencesProps) =>
   ));
 
 const experienceSubsets = chunkExperiences(
-  [...experiences].reverse().slice(0, experiences.length - 1)
+  [...experiences].reverse().slice(0, experiences.length - 1),
 );
 
 const PageOne = () => (

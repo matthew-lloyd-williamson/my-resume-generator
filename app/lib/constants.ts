@@ -4,6 +4,13 @@ import _ from "lodash";
 
 const Scottsdale = "Scottsdale, AZ";
 const Tempe = "Tempe, AZ";
+const Miami = "Miami, FL";
+
+export const OneImaging: Company = {
+  name: "OneImaging",
+  location: Miami,
+  logo: "https://logo.clearbit.com/oneimaging.com",
+};
 
 export const Caring: Company = {
   name: "Caring",
@@ -56,11 +63,51 @@ export const bigFivePersonalityScores = [
 
 export const experiences: Experience[] = [
   {
+    startDate: new Date("12/08/2025"),
+    startDisplay: "12/2025",
+    title: "Senior Software Engineer",
+    company: OneImaging,
+    url: "https://oneimaging.com",
+    achievements: [
+      "Created integration, unit, and e2e testing frameworks",
+      "Mentor developers on React, TypeScript, and Node code best practices",
+      "Assisted in major migration from Mongo to PSQL",
+      "Assisted in major migration from JS to TS",
+    ],
+    frontEndSkills: [
+      Skill.React,
+      Skill.TypeScript,
+      Skill.TailwindCSS,
+      Skill.Playwright,
+      Skill.EndToEndTesting,
+      Skill.UnitTesting,
+    ],
+    backEndSkills: [Skill.NodeJS, Skill.MongoDB, Skill.PostgreSQL],
+    generalTechnicalSkills: [
+      Skill.AWS,
+      Skill.GitHub,
+      Skill.Git,
+      Skill.CICD,
+      Skill.CodeReviews,
+    ],
+    softSkills: [
+      Skill.Leadership,
+      Skill.Mentorship,
+      Skill.TeamworkandCollaboration,
+      Skill.Communication,
+      Skill.ProblemSolving,
+      Skill.TimeManagement,
+      Skill.Adaptability,
+      Skill.ContinuousLearning,
+    ],
+  },
+  {
     startDate: new Date("01/13/2025"),
+    endDate: new Date("12/08/2025"),
     startDisplay: "01/2025",
+    endDisplay: "12/2025",
     title: "Technical Lead",
     company: Caring,
-    id: 1,
     url: "https://caring.com/",
     achievements: [
       "Lead technical direction for Next.js web application development.",
@@ -117,7 +164,6 @@ export const experiences: Experience[] = [
     endDisplay: "01/2025",
     title: "Sr. Software Engineer",
     company: Carvana,
-    id: 2,
     url: "https://carvana.com/",
     achievements: [
       "Lead development of SaaS apps using React/TypeScript, C#.NET microservices, and REST/GraphQL APIs.",
@@ -189,7 +235,6 @@ export const experiences: Experience[] = [
     endDisplay: "04/2024",
     title: "Sr. Software Engineer",
     company: SavvyTrader,
-    id: 3,
     url: "https://savvytrader.com/",
     achievements: [
       "Founding engineer, led the development of SaaS web/mobile apps using React/TypeScript and Node.js.",
@@ -262,7 +307,6 @@ export const experiences: Experience[] = [
     endDisplay: "12/2022",
     title: "Sr. Software Engineer",
     company: ImagineLearning,
-    id: 4,
     url: "https://www.imaginelearning.com/",
     achievements: [
       "Led development of education SaaS web applications using React/TypeScript and C#.NET REST/GraphQL APIs.",
@@ -332,7 +376,6 @@ export const experiences: Experience[] = [
     endDisplay: "03/2022",
     title: "Software Engineer II",
     company: GitKraken,
-    id: 5,
     url: "https://www.gitkraken.com/",
     achievements: [
       "Built and maintained a cross-platform Git GUI desktop app using React, Node.js, Electron, and TypeScript.",
@@ -403,7 +446,6 @@ export const experiences: Experience[] = [
     endDisplay: "08/2019",
     title: "Software Engineer",
     company: SandhillsPublishing,
-    id: 6,
     url: "https://sandhills.com/",
     achievements: [
       "Developed and maintained SaaS web apps using JavaScript, VB.NET, C#.NET, SQL, and MVC architectures.",
@@ -454,7 +496,6 @@ export const experiences: Experience[] = [
     endDisplay: "03/2018",
     title: "Software Engineer",
     company: CRC,
-    id: 7,
     achievements: [
       "Built, deployed, and maintained legacy VB6 desktop applications.",
       "Debugged and resolved bugs in legacy software and maintained SQL databases.",

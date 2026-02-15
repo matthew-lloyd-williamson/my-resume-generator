@@ -20,7 +20,7 @@ export default function Experiences() {
       {[...experiences].reverse().map((e, index) => {
         return (
           <Stack
-            key={`${e.company.name}-experience-card-${e.id}`}
+            key={`${e.company.name}-experience-card-${index}`}
             gap={4}
             sx={{
               color: THEME.WHITE,
@@ -110,7 +110,7 @@ export default function Experiences() {
               <Stack spacing={1.5} sx={{ flex: 1 }}>
                 {e.achievements.map((a, index) => (
                   <BulletPoint
-                    key={`${e.company.name}-${e.id}-achievement-${index}`}
+                    key={`${e.company.name}-achievement-${index}`}
                     text={a}
                     color={THEME.PRIMARY}
                   />

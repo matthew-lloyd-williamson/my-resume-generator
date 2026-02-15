@@ -106,6 +106,5 @@ export interface Experience {
   backEndSkills: Skill[];
   generalTechnicalSkills: Skill[];
   softSkills: Skill[];
-  id: number;
   url?: string;
 }
