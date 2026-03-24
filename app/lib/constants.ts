@@ -69,10 +69,11 @@ export const experiences: Experience[] = [
     company: OneImaging,
     url: "https://oneimaging.com",
     achievements: [
-      "Created integration, unit, and e2e testing frameworks",
+      "Lead development of OCR AI workflow improvement system",
+      "Won our first hackathon by introducing an SLA regression metric system",
+      "Lead major migration from MongoDB to PSQL and JS to TS, improving performance and maintainability",
+      "Created our integration, unit, and e2e testing frameworks",
       "Mentor developers on React, TypeScript, and Node code best practices",
-      "Assisted in major migration from Mongo to PSQL",
-      "Assisted in major migration from JS to TS",
     ],
     frontEndSkills: [
       Skill.React,
